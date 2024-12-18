@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Construction</title>
+    <link rel="icon" type="image/png" href="https://images-platform.99static.com/Q3q6WCEhMOiQUOmN16zzKhJuz6I=/123x0:882x759/500x500/top/smart/99designs-contests-attachments/83/83500/attachment_83500303">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background: none;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            padding: 15px 50px;
+            border-bottom: 0.1px solid  rgba(255, 255, 255, 0.08);;
+            display: flex;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        li{
+            list-style-type: none;
+            color: #f7f7f7;
+            display: inline;
+            padding: 20px;
+        }
+
+        .logo {
+            position: relative;
+            left: 240px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+
+            height: 48px;
+            width: 240px;
+        }
+
+        nav {
+            margin-right: 260px;
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white; /* Updated to match the second image */
+            font-weight:400;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg.jpg) no-repeat center center/cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 48px;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            
+        }
+
+        /* Our Story Section */
+        .our-story {
+            
+            padding: 80px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1650px;
+            
+            
+        }
+
+        .story-image {
+            z-index: 50;
+            position: absolute;
+            top: 685px;
+            left: 30px;
+            
+            
+            
+        }
+
+        .story-image img {
+            width: 557.33px;
+            height: 613px;
+            
+           
+        }
+        .img-bord{
+            width: 557.33px;
+            height: 613px;
+            border: 4px solid #ff5b00;
+            position: relative;
+            left: 40px;
+        } 
+        
+  
+
+
+
+        .story-content h2 {
+            font-size: 32px;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            position: relative;
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            
+        }
+        .story-content>p{
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-size: 1rem;
+            
+            color: #5a5a5a;
+  
+        }
+
+        .story-content h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 64px;
+            height: 4px;
+            background: #ff5b00;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            
+            color: #5a5a5a;
+        }
+
+        .feature-item:before {
+            content: '\f058'; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900;
+    color: #ff5b00;
+    font-size: 16px;
+    margin-right: 10px;
+        }
+
+        /* What We Offer */
+        .what-we-offer {
+            background: #f7f7f7;
+            padding: 80px 50px;
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+
+        .offer-card {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .learn-more {
+            color: #ff5b00;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-decoration: none;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=300&width=1200');
+            padding: 80px 50px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-button {
+            background: #ff5b00;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            border-radius: 3px;
+        }
+        .container2{
+        height:300px;
+        width:100%;
+        background-color: #7C7F84;
+        background-image: url('bgservices2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container2>p{
+        margin-top: 150px;
+
+      }
+      button{
+        color: #FFF7F8;
+        background-color:#FF5E14 ;
+        margin-left: 850px;
+        margin-top: 50px;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        border:none;
+      }
+      button:hover{
+        background-color: black;
+      }
+      .im2{
+  transition: 0.9s;
+}
+.im2:hover{
+  transform: scale(1.1);
+}
+
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 80px 50px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+        }
+
+        .footer-logo img {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links h3 {
+            margin-bottom: 20px;
+            color: white;
+            font-family: "Barlow", sans-serif;
+        }
+
+    
+    
+   .footer-links>a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    margin-bottom: 10px;
+   }
+   .footer-links>a:hover{
+    text-decoration: underline;
+    color:#FF5E14;
+   }
+
+        .copyright {
+            text-align: center;
+            color: #666;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            .our-story,
+            .offer-grid,
+            .team-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 15px 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero,
+            .our-story,
+            .what-we-offer,
+            .team,
+            .cta,
+            footer {
+                padding: 40px 20px;
+            }
+        }
+        .drop-down{
+    display: none;
+}
+.drop-down-menu {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    
+}
+.dropdown:hover .drop-down-menu{
+    display: block;
+}
+
+.drop-down-menu >li{
+    display: block !important;
+    margin-left: -30px;
+    padding-top:30px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Construction Logo">
+        </div>
+        <nav>
+            <ul>
+            <li class="dropdown"><a href="index.html">Home</a>
+                <ul class="drop-down-menu">
+                  <li><a href="#welcome-content">Where we build</a></li>
+                  <li><a href="#specialisation-content">Our specialisation</a></li>
+                  <li><a href="#clients">Clients Review</a></li>
+                </ul>
+          </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+              <li> <a href="projects.html">Projects</a></li>
+            <a href="contactus.html">Contact Us</a></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+      <li><i class="fa-brands fa-square-twitter"></i></li>
+      <li><i class="fa-brands fa-google"></i></li>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>About Us</h1>
+    </section>
+
+   
+<br><br><br>
+    <section class="our-story">
+        <div>
+        <div class="img-bord"></div>
+        <div class="story-image">
+            <img class="im2"src="story.jpg" alt="Construction framework">
+        </div>
+        
+    </div>
+    
+        <div class="story-content" style="margin-left: 35px;">
+            <h2>Our Story</h2>
+            <p>"Building Dreams, One Brick at a Time"
+                Since our inception, we've been dedicated to turning visions into reality, creating spaces that inspire and endure. With a passion for precision and a commitment to excellence, we bring together cutting-edge technology and skilled craftsmanship to deliver outstanding results. Our journey is driven by a simple mission: to construct not just buildings, but lasting relationships built on trust and quality. At the heart of every project, we aim to shape a future where innovation meets reliability.</p>
+            <div class="features">
+                <div class="feature-item">Professional Specialist</div>
+                <div class="feature-item">Precise Builders</div>
+                <div class="feature-item">Brilliant Ideas</div>
+                <div class="feature-item">24/7 Assistance</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-we-offer">
+        <h2>What We Offer</h2>
+        <br>
+        <p>We deliver tailored construction services with quality craftsmanship and sustainable practices, covering residential, commercial, and industrial projects. Your vision is our priority, ensuring seamless execution and timely delivery.</p>
+        <div class="offer-grid">
+            <div class="offer-card">
+                <img class="im2" src="requirements.jpg" alt="Requirements">
+                <h3>We Understand Requirements</h3>
+                <p>We understand your unique requirements to create solutions that perfectly aligns</p>
+                <a href="#" class="learn-more">Learn More →</a>
+            </div>
+            <div class="offer-card">
+                <img class="im2" src="worker.jpg" alt="Precise Work">
+                <h3>We Work Precisely</h3>
+                <p>We work with precision to deliver exceptional quality and attention to detail.</p>
+                <a href="#" class="learn-more">Learn More →</a>
+            </div>
+            <div class="offer-card">
+                <img class="im2" src="building.jpg" alt="Best Output">
+                <h3>We Deliver Best Output</h3>
+                <p>We deliver outstanding results that exceed expectations every time.</p>
+                <a href="#" class="learn-more">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <div class="container2">
+        <p align="center"><font color="#FF5E14" size="6"><strong>We Provide the Best Service in Industry</strong></font></p><br>
+        <p align="center"><font color="#FF5E14"><strong>Need assistance? Getting in touch with me is quick and easy—just message me!</strong></font></p>
+        <a  href="contactus.html"><button> <i class="fa-solid fa-arrow-right"></i> Contact Us Today</button></a>
+      </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Construction Logo">
+                <p>"Building dreams with precision, quality, and integrity.<br>&nbsp;&nbsp;&nbsp;&nbsp;-your vision, our foundation."</p>
+            </div>
+            <div class="footer-links">
+                <h3>Our Company</h3>
+                <a href="index.html">Who We Are</a>
+                <a href="About.html">About Company</a>
+                <a href="services.html">Services We Provide</a>
+                <a href="projects.html">What We Have Done</a>
+            </div>
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <a href="#">Architecture</a>
+                <a href="#">Interior Design</a>
+                <a href="#">Landscape Design</a>
+                <a href="#">Site Planning</a>
+            </div>
+            <div class="footer-links">
+                <h3>Contact Details</h3>
+                <p>123, Central Square New York</p>
+                <p>+1 123-456-7890</p>
+                <p>(555) 123-4567</p>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2024 Construction
+        </div>
+    </footer>
+</body>
+</html>

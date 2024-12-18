@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs-Construction</title>
+    <link rel="icon" type="image/png" href="https://images-platform.99static.com/Q3q6WCEhMOiQUOmN16zzKhJuz6I=/123x0:882x759/500x500/top/smart/99designs-contests-attachments/83/83500/attachment_83500303">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+      }
+   .navbar{
+    /*margin-left:200px;
+    margin-top:30px;
+    padding:10px;*/
+    margin-left:400px;
+    margin-top:20px;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .drop-down{
+    display: none;
+}
+.drop-down-menu {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    
+}
+.dropdown:hover .drop-down-menu{
+    display: block;
+}
+
+.drop-down-menu >li{
+    display: block !important;
+    margin-left: -30px;
+    padding-top:30px;
+}
+   body{
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+    .navbar>li{
+        display: inline;
+        padding: 15px;
+      
+       color:white; 
+      }
+      li>a{
+        text-decoration: none;
+        color: white;
+      }
+      .logo{
+       
+      
+        margin-left: 300px;
+        margin-top: 10px;
+       
+
+      }
+      header{
+        display:flex;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+        padding: 10px;
+
+      }
+      .container{
+      /*height:500px;
+        width:100%;
+        background-position: center;
+       
+        background-image: url(contactusbg.jpg);
+        background-attachment: fixed;*/
+        height:700px;
+        width:100%;
+        background-image: url('contactusbg.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+
+
+
+      .imglogo{
+       margin-top:10px;
+      }
+
+      .icons>li{
+        display: inline;
+      }
+      footer{
+        display: flex;
+        background-color: black;
+        color:white;
+        justify-content: space-around;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      .fd1,.fd2,.fd3,.fd4{
+       margin-top:40px;
+      }
+     .fd1,.fd2,.fd3,.fd4>p{
+      line-height: 30px;
+     }
+     .getintouch{
+      margin-left: 50px;
+      letter-spacing: 1px;
+      margin-top: 50px;
+
+     }
+     .getintouch>p{
+      font-size: 800;
+    
+      line-height: 30px;
+      font-size: 20px;
+      color: #6A6A6A;
+     }
+     .line{
+      
+      height: 3px;
+      width: 70px;
+      background-color: #FF5E14;
+     }
+   .maincontainer{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+  
+  
+   }
+   .left{
+    width:700px;
+    
+    margin-left: 100px;
+   }
+  .right{
+    background-color:#F7F7F7;
+  }
+   .right>div{
+
+    margin:10px;
+
+   
+   }
+   .contactinfo{
+    
+   }
+   .r1,.r2,.r3,.r4{
+    padding: 20px;
+    width: 200px;
+    line-height: 30px;
+    
+   }
+  .subcontact{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+   input,textarea{
+    display: block;
+    padding: 10px;
+    margin:15px;
+    width:500px;
+    border-radius: 5px;
+    font-size: 15px;
+    border:1px solid #DDDDDD
+   }
+   button{
+    display: block;
+    padding: 10px;
+    margin:15px;
+    width:120px;
+    border: none;
+    background-color:#FF5E14;
+    font-size: 18px;
+    font-family: 800;
+    color:white
+   }
+   i{
+    color:#FF5E14;
+    border-radius: 50%;
+    background-color:#FFE8DE ;
+    font-size: 25px;
+    padding: 10px;
+   }
+   iframe{
+    margin-left: 50px;
+    width: 90%;
+   }
+   .conthead{
+    font-size:60px;
+    position:absolute;
+    top:250px;
+    left:200px;
+    color:white;
+
+   }
+   .fd2>a{
+    text-decoration: none;
+    color:white;
+   }
+   .fd2>a:hover{
+    text-decoration: underline;
+    color:#FF5E14;
+   }
+    </style>
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+     <div class="logo">
+        <img class="imglogo" src="logo.png" alt="logo" >
+    
+     </div>
+        
+        <ul class="navbar">
+          <li class="dropdown"><a href="index.html">Home</a>
+            <ul class="drop-down-menu">
+              <li><a href="#welcome-content">Where we build</a></li>
+              <li><a href="#specialisation-content">Our specialisation</a></li>
+              <li><a href="#clients">Clients Review</a></li>
+            </ul>
+      </li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+        </ul>
+
+    </header>
+    <h1 class="conthead">Contact Us</h1>
+  
+  </div>
+
+ <div class="getintouch">
+  <h1>Get in Touch</h1><br>
+  <div class="line"></div><br>
+  <p>Reach out to us for any inquiries or assistance. <br>
+    We're here to help with any questions you may have.</p>
+
+ </div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="maincontainer">
+
+  <div class="left">
+    <h1>Send Us A Message</h1>
+    <form class="form">
+      <input type="text"  placeholder="Name">
+      <input type="text"  placeholder="Email">
+      <input type="text"  placeholder="Subject">
+      <textarea rows="10" cols="30" placeholder="Message"></textarea>
+        <button>Click here</button>
+
+      </textarea>
+    </form>
+
+  </div>
+
+  <div class="right">
+    
+    <div class="contactinfo"><h1>Contact Info</h1></div>
+    <div class="subcontact">
+    <div class="r1">
+
+    
+   <h3><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;Call Us </h3>
+   <p>
+    91 123-456-7890<br>
+     91 123-456-7891
+   </p>
+  </div>
+
+  <div class="r2">
+   <h3><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Our Location</h3>
+   <p>
+    125, Central Square,<br>
+Miyapur, HYD IN 
+   </p>
+  </div>
+
+  <div class="r3">
+    <h3><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;Our Email </h3>
+    <a href=""><p>contact.construction@gmail.com</p></a>
+     <a href=""><p> support.construction@gmail.com</a></p>
+  </div>
+
+
+
+  <div class="r4">
+    <h3><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;&nbsp;Working Hours </h3>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;Mon-Fri: 10AM-5PM<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Sat-Sun: 10AM-1PM
+    </p>
+  </div>
+  <div>
+  <h1>Follow Us</h1><br>
+  
+  <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+  <i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;
+  <i class="fa-brands fa-google"></i>&nbsp;&nbsp;
+  <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;
+</div>
+
+  
+  </div>
+
+   
+  </div>
+
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60875.45017516192!2d78.30289960098413!3d17.521082780946585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9279676f8f1d%3A0x6d53fb3b4ed44f8a!2sMiyapur%2C%20Telangana!5e0!3m2!1sen!2sin!4v1733914975372!5m2!1sen!2sin" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<br>
+
+
+
+
+   <footer>
+    <div class="fd1">
+      <img src="logo.png" alt="logo">
+      <br><br>
+      <p> We are a construction company specializing in <br>residential, commercial, and infrastructure projects,<br> delivering quality, efficiency, and reliability.</p>
+      <br>
+    
+      <ul class="icons">
+      <li><i class="fa-brands fa-facebook"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-square-twitter"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-google"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-linkedin"></i></li>
+    </ul>
+       </div>
+
+    </div>
+    <div class="fd2">
+      
+      <h1>Our Company</h1>
+      <br>
+      <a href="index.html"><p>Who We Are</p></a>
+      <a href="About.html"><p>About Company</p></a>
+      <a href="services.html"><p>Services We Provide</p></a>
+       <a href="projects.html"><p>What We Have Done</p></a>
+
+    </div>
+    <div class="fd3">
+        
+<h1>Our Services</h1>
+<br>
+<p>Architecture<br>
+Exterior Design<br>
+Landscape Design<br>
+Site Planning
+</p>
+
+    </div>
+    <div class="fd4">
+      <h1>Contact Details</h1>
+      <br>
+      <p>125, Central Square,Miyapur,HYD IN<br>
+      91 123-456-7890/91<br>
+      (002) 123-4567<br>
+      contact.construction@gmail.com
+     </p>
+    </div>
+   </footer>   
+</body>
+</html>

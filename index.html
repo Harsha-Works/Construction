@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Construction</title>
+    <link rel="icon" type="image/png" href="https://images-platform.99static.com/Q3q6WCEhMOiQUOmN16zzKhJuz6I=/123x0:882x759/500x500/top/smart/99designs-contests-attachments/83/83500/attachment_83500303">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      *::selection{
+        color:#ff1414;
+      }
+      *{
+        margin:0px;
+        padding:0px;
+      }
+     
+   .navbar{
+    margin-left:400px;
+    margin-top:30px;
+    padding:10px;
+   }
+
+      li{
+        display: inline;
+        padding: 20px;
+      
+       color:white; 
+      }
+      li>a{
+        
+        text-decoration: none;
+        color: white;
+      }
+      .logo{
+        margin-left: 300px;
+        margin-top:20px;
+      }
+      header{
+        display:flex;
+        border-bottom: 1px #fffff74f solid;
+        padding: 10px;
+      }
+      .contact-button{
+        color: #FFF7F8;
+        background-color:#FF5E14 ;
+        margin-left:200px;
+        margin-top: 30px;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        border:none;
+      }
+      .contact-button:hover{
+        background-color: black;
+      }
+      .container1{
+        height:950px;
+        width:100%;
+        background-image: url('bghome.jpg');
+         background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover; 
+
+      }
+      .icons>li{
+        display: inline;
+      }
+
+      .main-content{
+        color:white;
+        margin-left:300px;
+        margin-top:100px;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 100px;
+      }
+      .main-content>p{
+        color:yellow;
+        margin-left: 300px;
+      }
+      .t1,.t2,.t3{
+        font-size:60px ;
+      }
+      .t1{
+        color: orange;
+      }
+      .t2{
+        color:white;
+        margin-left: 400px;
+      }
+      .t3{
+        color: green;
+        margin-left: 900px;
+      }
+      .t1{
+        animation: t1 2s; 
+      }
+      .t3{
+        animation: t3 2s; 
+      }
+      .t2{
+        animation: t2 2s; 
+      }
+      @keyframes t1 {
+        0%{
+          opacity: 0;
+          transform: translateX(-500px);
+        }        
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes t3{
+        0%{
+          opacity: 0;
+          transform: translateX(-1500px);
+        }        
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes t2{
+        0%{
+          opacity: 0;
+          transform: translateX(-1000px);
+        }        
+        100%{
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      #welcome-content{
+        margin-left: 200px;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      #specialisation-content{
+        margin-left: 200px;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+
+      }
+      .off-sp{
+        background-color:#F2F9FF;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      .our-clients{
+        margin-left: 300px;
+      }
+      #clients{
+        background-color: #F7F7F7;
+        margin-left: 200px;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+
+      }
+      .client1{
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      .client2{
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      .client3{
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      .client4{
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+      }
+      
+      .container2{
+        height:300px;
+        width:100%;
+        background-color: #7C7F84;
+        background-image: url('bgservices2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container2>p{
+        margin-top: 150px;
+
+      }
+      .push-button{
+        margin-right:300px;
+        margin-top: 50px;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        border:none;
+      }
+      .appointment-button{
+        color: #FFF7F8;
+        background-color:#FF5E14 ;
+        margin-left: 850px;
+        margin-top: 50px;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        border:none;
+      }
+      .appointment-button:hover{
+        background-color: black;
+      }
+ .our-projects{
+        margin-left: 200px;
+        justify-content: space-around;
+        padding: 20px;
+        line-height: 30px;
+
+ }
+ .project-button{
+        color: #FFF7F8;
+        background-color:#FF5E14 ;
+        padding-left: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 35px;
+        border:none;
+      }
+      .project-button:hover{
+        background-color: black;
+      }
+     
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .achievements {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .achievement {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            margin: 20px;
+            position: relative;
+            animation: counter 2s ease-in-out forwards;
+        }
+        .achievement h2 {
+            font-size: 3em;
+            color: #2c3e50;
+            margin: 0;
+        }
+        .achievement p {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        .title {
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* Keyframe animation for the number transition effect */
+        @keyframes counter {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Random Values for each refresh using nth-child */
+        #clients h2::after {
+            content: counter(clients);
+            counter-reset: clients 6820;
+        }
+        #projects h2::after {
+            content: counter(projects);
+            counter-reset: projects 4000;
+        }
+        #repairs h2::after {
+            content: counter(repairs);
+            counter-reset: repairs 3568;
+        }
+        #awards h2::after {
+            content: counter(awards);
+            counter-reset: awards 1530;
+        }
+
+        /* Using CSS Randomized numbers for demo (not real random) */
+        @media screen and (max-width: 768px) {
+            #clients h2::after {
+                content: "7,000"; /* Simulated random number */
+            }
+            #projects h2::after {
+                content: "3,500"; /* Simulated random number */
+            }
+            #repairs h2::after {
+                content: "4,200"; /* Simulated random number */
+            }
+            #awards h2::after {
+                content: "1,200"; /* Simulated random number */
+            }
+        }
+
+      footer{
+        display: flex;
+        background-color: black;
+        color:white;
+        justify-content: space-around;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+      .fd1,.fd2,.fd3,.fd4{
+       margin-top:40px;
+      }
+     .fd1,.fd2,.fd3,.fd4>p{
+      line-height: 30px;
+     }
+     .fd2>a{
+    text-decoration: none;
+    color:white;
+   }
+   .fd2>a:hover{
+    text-decoration: underline;
+    color:#FF5E14;
+   }
+     div>p{
+      padding-left:50px;
+     }
+.client1,.client2,.client3,.client4{
+  transition: 0.9s;
+}
+.client1:hover,.client2:hover,.client3:hover,.client4:hover{
+  transform: scale(1.1);
+}
+.im1{
+  transition: 0.9s;
+}
+.im1:hover{
+  transform: scale(1.1);
+}
+.drop-down{
+    display: none;
+}
+.drop-down-menu {
+    display:none;
+    position: absolute;
+  
+    
+}
+.dropdown:hover .drop-down-menu{
+    display: block;
+    z-index: 1;
+}
+
+.drop-down-menu >li{
+    display: block !important;
+    margin-left: -30px;
+    padding-top:30px;
+}
+
+    </style>
+</head>
+<body>
+  <div class="container1">
+     <header>
+     <div class="logo">
+        <img src="logo.png" alt="logo" >
+    
+     </div>
+        
+        <ul class="navbar">
+            <li class="dropdown"><a href='/'>Home</a>
+                  <ul class="drop-down-menu">
+                    <li><a href="#welcome-content">Where we build</a></li>
+                    <li><a href="#specialisation-content">Our specialisation</a></li>
+                    <li><a href="#clients">Clients Review</a></li>
+                  </ul>
+            </li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+
+        </ul>
+       
+
+    </header>
+      <div class="main-content">
+        <div class="t1">
+          Broad Vision
+        </div>
+        <div class="t2">
+          Honest Service
+        </div>
+        <div class="t3">
+          Great Value
+        </div>
+        <p >Our goal then and now is to provide quality on time projects</p><br>
+        <button href="" class="contact-button"> <i class="fa-solid fa-arrow-right"></i> Get Free Quote</button>&nbsp; <button href="" class="push-button">  Get in Touch</button>
+      
+     </div>
+    </div>
+   </div><br><br><br><br><br>
+
+   <div id="welcome-content">
+    <div>
+      <p><font size="6"><strong>Welcome to the<br>Concrete Constructions</strong></font></p><br>
+      <p><font size="5"><strong>Where We Build Your Visions</strong></font></p><br>
+      <p> By combining creativity, innovation, and expert guidance,<br> we collaborate closely with you to bring your concepts to life.<br>With attention to detail, precision, and dedication, we ensure<br> that every vision is realized to its fullest potential.</p>
+    <br><br>
+    <p><a><i class="fa-solid fa-phone-flip"></i> </a><font size="4"color="#5A5A5A"><b>Call Us Today</b></font></p><br>
+    <p><font size="6"><strong>9908357282</strong></font></p>
+    </div>
+    <div>
+      <img class="im1" src="welcomehome.jpg" height="500" width="500">
+    </div>
+   </div><br><br>
+
+   <div class="container2">
+    <p align="center"><font color="#FF5E14" size="6"><strong><marquee>Get Your Free Consultation</marquee></strong></font></p><br>
+    <p align="center"><font color="#FF5E14"><strong>Working together, we ensure your vision is fully realized, with every detail aligned to your goals. Your success is our mission.</strong></font></p>
+    <a href="contactus.html"><button class="appointment-button"> <i class="fa-solid fa-arrow-right"></i> Book an Appointment</button></a>
+  </div><br><br><br>
+
+  <div id="specialisation-content">
+    <div>
+    <img class="im1"src="homespecial.jpg" height="500" width="500">
+    </div>
+    <div>
+    <p ><font size="6"><strong>Our Specialization</strong></font></p><br>
+  
+    <div class="off-sp">
+      <div>
+  
+        <p><i class="fa-solid fa-house"></i> <b>Architecture</b><br>Architecture is the art and science of designing<br> functional, aesthetic buildings and structures that<br> enhance the environment and society.
+        </p><br>
+        <p><i class="fa-solid fa-layer-group"></i> <b>Exterior Design</b><br>Exterior design focuses on creating visually appealing<br> and functional outdoor spaces, blending architecture,<br> landscaping, and environmental elements seamlessly.
+        </p><br>
+        <p><i class="fa-solid fa-hourglass"></i> <b>Furniture Design</b><br>Furniture design combines creativity and functionality,<br> crafting pieces that enhance spaces with aesthetic appeal,<br> comfort, and practical use. 
+        </p>
+      </div>
+      <div>
+  
+        <p><i class="fa-solid fa-pen-to-square"></i> <b>Landscape Design</b><br>Landscape design involves planning and creating outdoor<br> spaces,integrating natural elements with functional, aesthetic<br> features for enhanced environments.
+        </p><br>
+        <p><i class="fa-regular fa-rectangle-list"></i> <b>Site Planning</b><br>Site planning involves organizing and designing outdoor<br> spaces, considering factors like terrain, functionality, aesthetics, <br>and environmental impact for optimal use.
+        </p><br>
+        <p><i class="fa-solid fa-object-ungroup"></i> <b>Interior Design</b><br>Interior design focuses on enhancing indoor spaces, blending <br>functionality, aesthetics, and comfort to create visually <br>pleasing and practical environments.
+        </p>
+      </div>
+    </div>
+    </div><br><br>
+  </div><br><br><br><br>
+
+  <p class="our-clients"><font size="6"><strong>What Our Clients Say</strong></font></p><br>
+
+  <div id="clients">
+    <div>
+    <div class="client1">
+      <div>
+        <img src="client1home.jpg" height="250" width="150">
+      </div>
+      <div>
+        <p>Amazing work! They exceeded my expectations,<br> turning my vision into a reality with creativity<br> and precision. Highly recommend!<br><br><b>Matthew Fox</b><br>&nbsp;​
+          Development Company</p>
+      </div>
+      
+    </div>
+    <div class="client2">
+      <div>
+        <img src="client2home.jpg" height="250" width="150">
+      </div>
+      <div>
+        <p>This was an excellent experience from start to<br> finish. Thank you for making it so easy<br><br><b>Margaret Curtis​</b><br>&nbsp;
+          Real Estate Developer​
+          Development Company</p>
+      </div>
+       
+    </div>
+    </div>
+    <div>
+
+    <div class="client3">
+      <div>
+        <img  src="client3home.jpg" height="250" width="150">
+      </div>
+      <div>
+        <p>Your team communicated clearly throughout<br> the entire project,which made everything<br> run smoothly.<br><br><b>John Doe​</b><br>&nbsp;
+          Architect</p>
+      </div>
+
+    </div>
+    <div class="client4">
+      <div>
+        <img src="client4home.jpg" height="250" width="150">
+      </div>
+      <div>
+        <p>Your customer service was exceptional;<br> you were always available to answer<br> our questions.<br><br><b>Riya Verma</b><br>&nbsp;
+          Development Company</p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+    <div class="our-projects">
+      <table border="0">
+        <tr>
+      <td><p><font size="6"><strong>Our Recent Projects</strong></font></p><br></td>
+      <td></td>
+        </tr>
+        <tr>
+      <td><p><font color="grey"><strong>Explore our latest projects that showcase our expertise in delivering high-quality construction solutions.<br> From innovative designs to timely execution, we are proud to have brought each vision to life with<br> precision and care.Check out the full details of these successful projects and see how we can help turn<br> your ideas into reality.</font></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="projects.html"><button class="project-button"> <i class="fa-solid fa-arrow-right"></i> View All Projects</button></a></td>
+        </tr>
+      </table>
+      </div><br>
+
+      <div class="container">
+        <h1 class="title">Our Achievements</h1>
+        <div class="achievements">
+            <div class="achievement" id="clients">
+                <h2></h2>
+                <p>Clients Served</p>
+            </div>
+            <div class="achievement" id="projects">
+                <h2></h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="achievement" id="repairs">
+                <h2></h2>
+                <p>Repairs Delivered</p>
+            </div>
+            <div class="achievement" id="awards">
+                <h2></h2>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </div>
+
+
+  <footer>
+    <div class="fd1">
+      <img src="logo.png" alt="logo">
+      <br><br>
+      <p> We are a construction company specializing in <br>residential, commercial, and infrastructure projects,<br> delivering quality, efficiency, and reliability.</p>
+      <br>
+    
+      <ul class="icons">
+      <li><i class="fa-brands fa-facebook"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-square-twitter"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-google"></i></li>&nbsp;&nbsp;&nbsp;
+      <li><i class="fa-brands fa-linkedin"></i></li>
+    </ul>
+       </div>
+
+    </div>
+    <div class="fd2">
+      
+      <h1>Our Company</h1>
+      <br>
+      <a href="index.html"><p>Who We Are</p></a>
+      <a href="About.html"><p>About Company</p></a>
+      <a href="services.html"><p>Services We Provide</p></a>
+       <a href="projects.html"><p>What We Have Done</p></a>
+
+    </div>
+    <div class="fd3">
+        
+<h1>Our Services</h1>
+<br>
+<p>Architecture<br>
+Exterior Design<br>
+Landscape Design<br>
+Site Planning
+</p>
+
+    </div>
+    <div class="fd4">
+      <h1>Contact Details</h1>
+      <br>
+      <p>125, Central Square,Miyapur,HYD IN<br>
+      91 123-456-7890/91<br>
+      (002) 123-4567<br>
+      contact.construction@gmail.com
+     </p>
+    </div>
+   </footer>  
+   
+  </body>
+  </html>
